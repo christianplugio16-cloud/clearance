@@ -1,0 +1,65 @@
+============================================
+QUICK START: Database Migration
+============================================
+
+STEP 1: BACKUP YOUR DATABASE (CRITICAL!)
+-----------------------------------------
+mysqldump -u root -p dms > dms_backup_$(date +%Y%m%d_%H%M%S).sql
+
+
+STEP 2: RUN THE MIGRATION
+-----------------------------------------
+mysql -u root -p dms < clearance-schema-migration.sql
+
+
+STEP 3: VERIFY SUCCESS
+-----------------------------------------
+mysql -u root -p dms -e "DESCRIBE account_studentprofile;"
+
+
+IF SOMETHING GOES WRONG - ROLLBACK:
+-----------------------------------------
+mysql -u root -p dms < clearance-schema-rollback.sql
+
+
+FILES INCLUDED:
+-----------------------------------------
+✓ clearance-schema-migration.sql  - Main migration script
+✓ clearance-schema-rollback.sql   - Rollback script
+✓ MIGRATION-GUIDE.md              - Detailed documentation
+✓ RUN-MIGRATION.txt               - This quick reference
+
+
+IMPORTANT NOTES:
+-----------------------------------------
+1. ALWAYS backup before running migrations!
+2. Test on development database first if possible
+3. Run during low-traffic periods
+4. Read MIGRATION-GUIDE.md for full details
+
+
+WHAT THIS MIGRATION DOES:
+-----------------------------------------
+Adds 6 new columns to account_studentprofile table:
+  - email (VARCHAR 100) - for student registration
+  - registration_status (ENUM) - pending/approved/rejected
+  - clearance_generated (TINYINT) - 0 or 1 flag
+  - clearance_date (VARCHAR 30) - timestamp
+  - clearance_reference (VARCHAR 20) - unique ID
+  - created_on (VARCHAR 30) - account creation date
+
+Adds 3 indexes for performance:
+  - unique_email (UNIQUE) - ensures unique emails
+  - idx_clearance_generated - speeds up clearance queries
+  - idx_registration_status - speeds up registration queries
+
+
+NEED HELP?
+-----------------------------------------
+See MIGRATION-GUIDE.md for:
+  - Detailed step-by-step instructions
+  - Troubleshooting common issues
+  - Rollback procedures
+  - Post-migration tasks
+
+============================================

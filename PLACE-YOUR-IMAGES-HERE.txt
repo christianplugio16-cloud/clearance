@@ -1,0 +1,71 @@
+========================================
+  CPSU VICTORIAS - IMAGE PLACEMENT GUIDE
+========================================
+
+I've set up everything for you! Now you just need to add your images.
+
+STEP 1: PREPARE YOUR IMAGES
+----------------------------
+You need 2 images:
+
+1. CPSU LOGO
+   - Name it: cpsu-logo.png
+   - Recommended size: 120x120 pixels (or larger)
+   - Format: PNG with transparent background
+   - Should be: CPSU Victorias official logo
+
+2. BACKGROUND IMAGE
+   - Name it: cpsu-bg.jpg
+   - Recommended size: 1920x1080 pixels or higher
+   - Format: JPG or PNG
+   - Should be: Campus building, gate, or scenic view
+
+
+STEP 2: PLACE YOUR IMAGES
+--------------------------
+Copy your images to BOTH locations:
+
+FOR ADMIN LOGIN:
+  📁 admin/dist/img/cpsu-logo.png  ← Place your logo here
+  📁 admin/dist/img/cpsu-bg.jpg    ← Place your background here
+
+FOR STUDENT LOGIN:
+  📁 student/dist/img/cpsu-logo.png  ← Place your logo here
+  📁 student/dist/img/cpsu-bg.jpg    ← Place your background here
+
+
+STEP 3: TEST IT OUT
+-------------------
+Open these files in your browser:
+  - admin/login.php
+  - student/login.php
+
+You should see your logo and background!
+
+
+TROUBLESHOOTING
+---------------
+❌ Images not showing?
+   - Check file names are EXACTLY: cpsu-logo.png and cpsu-bg.jpg
+   - Check they're in the correct folders: admin/dist/img/ and student/dist/img/
+   - Refresh your browser (Ctrl+F5)
+
+❌ Background too dark/light?
+   - I can adjust the overlay opacity in the CSS
+   - Just let me know!
+
+❌ Logo too big/small?
+   - I can adjust the logo size in the CSS
+   - Just let me know!
+
+
+NEED HELP?
+----------
+If you need me to:
+  - Change the file names the system looks for
+  - Adjust colors, sizes, or styling
+  - Add more customization
+
+Just ask! I'm here to help.
+
+========================================

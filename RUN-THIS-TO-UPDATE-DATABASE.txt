@@ -1,0 +1,64 @@
+========================================
+  HOW TO UPDATE YOUR DATABASE
+========================================
+
+I've created an automatic update script for you!
+
+OPTION 1: Using phpMyAdmin (EASIEST)
+-------------------------------------
+1. Open phpMyAdmin in your browser
+2. Click on your database (probably named "dms")
+3. Click the "SQL" tab at the top
+4. Open the file: update-courses.sql
+5. Copy ALL the content
+6. Paste it into the SQL query box
+7. Click "Go" button
+8. Done! Your courses are updated!
+
+
+OPTION 2: Using Command Line
+-----------------------------
+Open your terminal/command prompt and run:
+
+mysql -u root -p dms < update-courses.sql
+
+(Replace "root" with your MySQL username if different)
+
+
+OPTION 3: Using PHP Script (I can create this)
+-----------------------------------------------
+I can create a PHP script that runs automatically
+when you visit it in your browser.
+
+Just say "create PHP update script" and I'll make it!
+
+
+WHAT GETS UPDATED:
+------------------
+✓ Law → College of Education
+✓ Social Science → College of Agriculture  
+✓ Humanities → College of Technology
+✓ NEW: College of Hospitality Management
+
+✓ Law → Bachelor in Elementary Education
+✓ Psychology → BS in Agriculture
+✓ Sociology → BS in Information Technology
+✓ History → BS in Hospitality Management
+
+
+IMPORTANT NOTES:
+----------------
+⚠ This updates your EXISTING database
+⚠ Student records will keep their course assignments
+⚠ Only the course NAMES change, not the data
+⚠ Backup your database first if you want to be safe!
+
+
+NEED HELP?
+----------
+Just let me know if you want me to:
+- Create a PHP auto-update script
+- Create a backup script first
+- Explain any step in more detail
+
+========================================

@@ -1,0 +1,229 @@
+/* CPSU Victorias Green Theme */
+
+/* Change skin-blue to green theme */
+.skin-blue .main-header .navbar {
+    background-color: #228B22;
+}
+
+.skin-blue .main-header .logo {
+    background-color: #006633;
+    color: #ffffff;
+    border-bottom: 0 solid transparent;
+}
+
+.skin-blue .main-header .logo:hover {
+    background-color: #004d26;
+}
+
+.skin-blue .main-header li.user-header {
+    background-color: #228B22;
+}
+
+/* Sidebar styling */
+.skin-blue .sidebar-menu > li.header {
+    color: #4b646f;
+    background: #1a2226;
+}
+
+.skin-blue .sidebar-menu > li > a {
+    border-left: 3px solid transparent;
+}
+
+.skin-blue .sidebar-menu > li:hover > a,
+.skin-blue .sidebar-menu > li.active > a {
+    color: #ffffff;
+    background: #1e282c;
+    border-left-color: #228B22;
+}
+
+.skin-blue .sidebar-menu > li > .treeview-menu {
+    background: #2c3b41;
+}
+
+.skin-blue .sidebar a {
+    color: #b8c7ce;
+}
+
+.skin-blue .sidebar a:hover {
+    text-decoration: none;
+}
+
+/* User panel in sidebar */
+.skin-blue .user-panel > .info,
+.skin-blue .user-panel > .info > a {
+    color: #fff;
+}
+
+/* Treeview menu */
+.skin-blue .treeview-menu > li > a {
+    color: #8aa4af;
+}
+
+.skin-blue .treeview-menu > li.active > a,
+.skin-blue .treeview-menu > li > a:hover {
+    color: #ffffff;
+}
+
+/* Sidebar toggle button */
+.skin-blue .main-header .sidebar-toggle:hover {
+    background-color: #1a6b1a;
+}
+
+/* Primary buttons and elements */
+.btn-primary {
+    background-color: #228B22;
+    border-color: #1a6b1a;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #1a6b1a;
+    border-color: #006633;
+}
+
+/* Box primary */
+.box.box-primary {
+    border-top-color: #228B22;
+}
+
+.box-primary .box-header {
+    color: #fff;
+    background: #228B22;
+}
+
+/* Info boxes - adjust colors */
+.info-box {
+    min-height: 90px;
+}
+
+.bg-green {
+    background-color: #228B22 !important;
+}
+
+.bg-aqua {
+    background-color: #00a65a !important;
+}
+
+/* Small boxes */
+.small-box.bg-green {
+    background-color: #228B22 !important;
+}
+
+.small-box.bg-aqua {
+    background-color: #00a65a !important;
+}
+
+/* Links */
+a {
+    color: #228B22;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #1a6b1a;
+}
+
+/* Breadcrumb */
+.content-header > .breadcrumb > li > a {
+    color: #444;
+}
+
+.content-header > .breadcrumb > li > a:hover {
+    color: #228B22;
+}
+
+/* Form focus */
+.form-control:focus {
+    border-color: #228B22;
+    box-shadow: none;
+}
+
+/* Pagination */
+.pagination > .active > a,
+.pagination > .active > span {
+    background-color: #228B22;
+    border-color: #228B22;
+}
+
+.pagination > li > a:hover {
+    background-color: #e8f5e9;
+    border-color: #ddd;
+    color: #228B22;
+}
+
+/* DataTables */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #228B22 !important;
+    border-color: #228B22 !important;
+    color: white !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #e8f5e9 !important;
+    border-color: #228B22 !important;
+    color: #228B22 !important;
+}
+
+/* Success elements */
+.bg-success,
+.callout.callout-success,
+.alert-success,
+.label-success,
+.modal-success .modal-body {
+    background-color: #228B22 !important;
+}
+
+/* Custom enhancements */
+.main-header .logo-lg b {
+    color: #ffffff;
+}
+
+.main-header .navbar .nav > li > a {
+    color: #ffffff;
+}
+
+.main-header .navbar .nav > li > a:hover,
+.main-header .navbar .nav > li > a:active,
+.main-header .navbar .nav > li > a:focus {
+    background: rgba(0, 0, 0, 0.1);
+    color: #f6f6f6;
+}
+
+/* Dropdown menu */
+.dropdown-menu > li > a:hover {
+    background-color: #e8f5e9;
+    color: #228B22;
+}
+
+/* Box success */
+.box.box-success {
+    border-top-color: #228B22;
+}
+
+.box-success .box-header {
+    color: #fff;
+    background: #228B22;
+}
+
+/* Progress bars */
+.progress-bar {
+    background-color: #228B22;
+}
+
+/* Labels */
+.label-primary {
+    background-color: #228B22;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .skin-blue .main-header .logo {
+        background-color: #006633;
+    }
+    
+    .skin-blue .main-header .navbar {
+        background-color: #228B22;
+    }
+}

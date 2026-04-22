@@ -1,0 +1,65 @@
+========================================
+  FIX DATATABLES MATRIC ERROR
+========================================
+
+You're seeing this error because the database still has the old 'matric' column
+but the code is looking for 'username'.
+
+SOLUTION - Follow these steps IN ORDER:
+========================================
+
+STEP 1: Update Your Database
+-----------------------------
+Run the SQL script: remove-matric-update.sql
+
+In phpMyAdmin:
+1. Open phpMyAdmin
+2. Select your 'dms' database
+3. Click "SQL" tab
+4. Copy ALL content from remove-matric-update.sql
+5. Paste and click "Go"
+
+This will rename the 'matric' column to 'username' in your database.
+
+
+STEP 2: Clear Browser Cache
+----------------------------
+After updating the database:
+1. Press Ctrl + Shift + Delete (Chrome/Edge)
+2. Select "Cached images and files"
+3. Click "Clear data"
+
+OR simply press Ctrl + F5 to hard refresh the page
+
+
+STEP 3: Verify the Fix
+-----------------------
+1. Go to admin panel
+2. Click on "Students" menu
+3. The table should now show "Username" column instead of "Matric"
+4. Try adding a new student - use username instead of matric number
+
+
+ALTERNATIVE: If Error Persists
+===============================
+
+If you still see the error after Step 1 & 2, there might be
+another DataTable configuration. Check these files:
+
+Admin side:
+- admin/dist/js/actions.js (already updated)
+- admin/studentList.php (already updated)
+
+Student side:
+- student/dist/js/actions.js (already updated)
+
+
+IMPORTANT NOTES:
+================
+⚠ You MUST run the SQL script first
+⚠ The error happens because database structure doesn't match the code
+⚠ After SQL update, everything will work correctly
+
+Need more help? Let me know which step is causing issues!
+
+========================================
